@@ -83,7 +83,10 @@ module.exports = {
   plugins: [...commonPluggins],
   settings: {
     'import/resolver': {
-      'babel-module': {},
+      'babel-plugin-root-import': {
+        rootPathPrefix: '~',
+        rootPathSuffix: 'ts',
+      },
     },
     react: {
       version: 'detect',
