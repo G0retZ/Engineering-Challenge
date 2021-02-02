@@ -61,7 +61,7 @@ export default (props: Props) => {
       horizontal
       showsHorizontalScrollIndicator={false}
       snapToInterval={itemWidth}
-      snapToAlignment={'center'}
+      snapToAlignment={'start'}
       ref={scrollRef}
       onScrollBeginDrag={onScrollStart}
       onMomentumScrollEnd={onScrollEnd}

@@ -60,7 +60,6 @@ export default (props: Props) => {
 
   const onScrollStart = () => props.onScrollState(true)
   const onScrollEnd = () => props.onScrollState(false)
-
   return (
     <FlatList
       {...props}
@@ -68,7 +67,7 @@ export default (props: Props) => {
       horizontal
       showsHorizontalScrollIndicator={false}
       snapToInterval={itemWidth}
-      snapToAlignment={'center'}
+      snapToAlignment={'start'}
       ref={scrollRef}
       onScrollBeginDrag={onScrollStart}
       onMomentumScrollEnd={onScrollEnd}
